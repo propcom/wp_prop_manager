@@ -2,7 +2,7 @@
 
 	/*
 	 * Plugin Name: Propeller Manager
-	 * Version: 1.0.0
+	 * Version: 1.0.1
 	 * Author: Samuel Woodbridge
 	 * Description: This plugin allows you to change your website settings.
 	 */
@@ -379,7 +379,7 @@
 
 					printf(
 
-						'<textarea id="' . $args['name'] . '" name="prop_' . $args['setting'] . '[' . $args['name'] . ']" value="%s" rows="' . $args['rows'] . '" cols="' . $args['cols'] . '"></textarea>',
+						'<textarea id="' . $args['name'] . '" name="prop_' . $args['setting'] . '[' . $args['name'] . ']" rows="' . $args['rows'] . '" cols="' . $args['cols'] . '">%s</textarea>',
 						isset( $this->options[ $args['name'] ] ) ? esc_attr( $this->options[ $args['name'] ] ) : ''
 
 					);
