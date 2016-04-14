@@ -204,6 +204,22 @@
 
 			add_settings_field(
 
+				'typekit',
+				'Typekit ID',
+				[ $this, 'add_field' ],
+				'propeller-manager',
+				'site_settings',
+				[
+					'name'    => 'typekit',
+					'type'    => 'text',
+					'setting' => 'site',
+				]
+
+			);
+
+
+			add_settings_field(
+
 				'listID',
 				'List ID\'s',
 				[ $this, 'add_field' ],
