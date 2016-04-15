@@ -2,7 +2,7 @@
 
 	/*
 	 * Plugin Name: Propeller Manager
-	 * Version: 1.0.2
+	 * Version: 1.0.3
 	 * Author: Samuel Woodbridge
 	 * Description: This plugin allows you to change your website settings.
 	 */
@@ -24,12 +24,11 @@
 
 				} else {
 
-					echo '';
+					return false;
 
 				}
 
 			} catch (Exception $e) {}
-
 
 		}
 
