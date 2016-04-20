@@ -2,7 +2,7 @@
 
 	/*
 	 * Plugin Name: Propeller Manager
-	 * Version: 1.0.5
+	 * Version: 1.0.6
 	 * Author: Samuel Woodbridge
 	 * Description: This plugin allows you to change your website settings.
 	 */
@@ -20,7 +20,7 @@
 
 				if(isset($option[$property]) && $option[$property] !== '') {
 
-					return true;
+					return $option[$property];
 
 				} else {
 
