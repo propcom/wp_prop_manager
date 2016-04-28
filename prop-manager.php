@@ -2,7 +2,7 @@
 
 	/*
 	 * Plugin Name: Propeller Manager
-	 * Version: 1.0.6
+	 * Version: 1.0.7
 	 * Author: Samuel Woodbridge
 	 * Description: This plugin allows you to change your website settings.
 	 */
@@ -331,6 +331,21 @@
 
 			);
 
+			add_settings_field(
+
+				'dmn',
+				'Design My Night ID',
+				[ $this, 'add_field' ],
+				'propeller-venue',
+				'venue_settings',
+				[
+					'name'    => 'dmn',
+					'type'    => 'text',
+					'setting' => 'venue',
+				]
+
+			);
+
 			/**
 			 * @desc Social Media Settings
 			 */
@@ -398,6 +413,21 @@
 				'social_settings',
 				[
 					'name'    => 'pinterest',
+					'type'    => 'text',
+					'setting' => 'social',
+				]
+
+			);
+
+			add_settings_field(
+
+				'instagram_token',
+				'Instagram Access Token',
+				[ $this, 'add_field' ],
+				'propeller-social',
+				'social_settings',
+				[
+					'name'    => 'instagram_token',
 					'type'    => 'text',
 					'setting' => 'social',
 				]
