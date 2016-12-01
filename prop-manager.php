@@ -286,6 +286,24 @@
 
 			);
 
+			add_settings_field(
+
+				'webmaster_html_tag',
+				'Webmaster HTML Tag',
+				[ $this, 'add_field' ],
+				'propeller-manager',
+				'site_settings',
+				[
+					'name'    => 'webmaster_html_tag',
+					'type'    => 'textarea',
+					'rows'    => 5,
+					'cols'    => 46,
+					'setting' => 'site',
+					'note'    => 'Insert your html tag to verify this site on webmaster tools',
+				]
+
+			);
+
 			/**
 			 * @desc Venue Settings
 			 */
