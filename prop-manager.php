@@ -2,7 +2,7 @@
 
 	/*
 	 * Plugin Name: Propeller Manager
-	 * Version: 1.0.8
+	 * Version: 1.0.9
 	 * Author: Samuel Woodbridge
 	 * Description: This plugin allows you to change your website settings.
 	 */
@@ -380,12 +380,42 @@
 			add_settings_field(
 
 				'instagram',
-				'Instagram User',
+				'Instagram Username',
 				[ $this, 'add_field' ],
 				'propeller-social',
 				'social_settings',
 				[
 					'name'    => 'instagram',
+					'type'    => 'text',
+					'setting' => 'social',
+				]
+
+			);
+
+			add_settings_field(
+
+				'instagram_id',
+				'Instagram User ID',
+				[ $this, 'add_field' ],
+				'propeller-social',
+				'social_settings',
+				[
+					'name'    => 'instagram_id',
+					'type'    => 'text',
+					'setting' => 'social',
+				]
+
+			);
+
+			add_settings_field(
+
+				'instagram_token',
+				'Instagram Access Token',
+				[ $this, 'add_field' ],
+				'propeller-social',
+				'social_settings',
+				[
+					'name'    => 'instagram_token',
 					'type'    => 'text',
 					'setting' => 'social',
 				]
@@ -431,21 +461,6 @@
 				'social_settings',
 				[
 					'name'    => 'pinterest',
-					'type'    => 'text',
-					'setting' => 'social',
-				]
-
-			);
-
-			add_settings_field(
-
-				'instagram_token',
-				'Instagram Access Token',
-				[ $this, 'add_field' ],
-				'propeller-social',
-				'social_settings',
-				[
-					'name'    => 'instagram_token',
 					'type'    => 'text',
 					'setting' => 'social',
 				]
