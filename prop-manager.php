@@ -303,6 +303,24 @@
 				]
 
 			);
+			
+			add_settings_field(
+
+				'site_specific_head_elements',
+				'Head Elements',
+				[ $this, 'add_field' ],
+				'propeller-manager',
+				'site_settings',
+				[
+					'name'    => 'site_specific_head_elements',
+					'type'    => 'textarea',
+					'rows'    => 5,
+					'cols'    => 46,
+					'setting' => 'site',
+					'note'    => 'Insert any site specific head elements here. E.g. Google fonts and/or JS links.',
+				]
+
+			);
 
 			/**
 			 * @desc Venue Settings
