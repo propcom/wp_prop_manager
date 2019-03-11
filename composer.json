@@ -1,0 +1,11 @@
+{
+  "name": "propcom/wp_prop_manager",
+  "description": "Settings Plugin for Wordpress",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Samuel Woodbridge",
+      "email": "samuel.woodbridge@propcom.co.uk"
+    }
+  ]
+}
