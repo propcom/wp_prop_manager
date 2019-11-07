@@ -439,6 +439,21 @@
 				]
 
 			);
+			
+			add_settings_field(
+
+				'facebook_client_id',
+				'Facebook Client ID',
+				[ $this, 'add_field' ],
+				'propeller-social',
+				'social_settings',
+				[
+					'name'    => 'facebook_client_id',
+					'type'    => 'text',
+					'setting' => 'social',
+				]
+
+			);
 
 			add_settings_field(
 
