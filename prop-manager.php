@@ -2,7 +2,7 @@
 
 	/*
 	 * Plugin Name: Propeller Manager
-	 * Version: 1.0.10
+	 * Version: 1.0.11
 	 * Author: Samuel Woodbridge
 	 * Description: This plugin allows you to change your website settings.
 	 */
