@@ -369,6 +369,21 @@
 
 			add_settings_field(
 
+				'google_map_url',
+				'Google Map URL',
+				[ $this, 'add_field' ],
+				'propeller-venue',
+				'venue_settings',
+				[
+					'name'    => 'google_map_url',
+					'type'    => 'text',
+					'setting' => 'venue',
+				]
+
+			);
+
+			add_settings_field(
+
 				'dmn',
 				'Design My Night ID',
 				[ $this, 'add_field' ],
