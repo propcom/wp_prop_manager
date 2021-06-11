@@ -322,6 +322,36 @@
 
 			);
 
+			add_settings_field(
+
+				'recaptcha_site_key',
+				'ReCAPTCHA Site Key',
+				[ $this, 'add_field' ],
+				'propeller-manager',
+				'site_settings',
+				[
+					'name'    => 'recaptcha_site_key',
+					'type'    => 'text',
+					'setting' => 'site',
+				]
+
+			);
+
+			add_settings_field(
+
+				'recaptcha_secret_key',
+				'ReCAPTCHA Secret Key',
+				[ $this, 'add_field' ],
+				'propeller-manager',
+				'site_settings',
+				[
+					'name'    => 'recaptcha_secret_key',
+					'type'    => 'text',
+					'setting' => 'site',
+				]
+
+			);
+
 			/**
 			 * @desc Venue Settings
 			 */
