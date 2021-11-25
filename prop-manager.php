@@ -235,6 +235,21 @@
 				]
 
 			);
+			
+			add_settings_field(
+
+				'api_id',
+				'API ID',
+				[ $this, 'add_field' ],
+				'propeller-manager',
+				'site_settings',
+				[
+					'name'    => 'api_id',
+					'type'    => 'text',
+					'setting' => 'site',
+				]
+
+			);
 
 			add_settings_field(
 
