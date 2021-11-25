@@ -220,6 +220,21 @@
 				]
 
 			);
+			
+			add_settings_field(
+
+				'acteol_id',
+				'Acteol ID',
+				[ $this, 'add_field' ],
+				'propeller-manager',
+				'site_settings',
+				[
+					'name'    => 'acteol_id',
+					'type'    => 'number',
+					'setting' => 'site',
+				]
+
+			);
 
 			add_settings_field(
 
