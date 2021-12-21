@@ -315,6 +315,22 @@
 				]
 
 			);
+			
+			add_settings_field(
+
+				'tag_manager',
+				'Tag Manger Codes',
+				[ $this, 'add_field' ],
+				'propeller-manager',
+				'site_settings',
+				[
+					'name'    => 'tag_manager',
+					'type'    => 'text',
+					'setting' => 'site',
+					'note'    => '',
+				]
+
+			);
 
 			add_settings_field(
 
