@@ -317,7 +317,6 @@
 			);
 			
 			add_settings_field(
-
 				'tag_manager',
 				'Tag Manger Codes',
 				[ $this, 'add_field' ],
@@ -329,7 +328,20 @@
 					'setting' => 'site',
 					'note'    => '',
 				]
-
+			);
+			
+			add_settings_field(
+				'profit_room',
+				'Profit Room ID',
+				[ $this, 'add_field' ],
+				'propeller-manager',
+				'site_settings',
+				[
+					'name'    => 'profit_room',
+					'type'    => 'text',
+					'setting' => 'site',
+					'note'    => '',
+				]
 			);
 
 			add_settings_field(
