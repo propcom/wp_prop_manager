@@ -639,6 +639,27 @@
 
 					break;
 
+				case 'checkbox' :
+
+					printf(
+
+						'<input type="checkbox" id="' . $args['name'] . '" name="prop_' . $args['setting'] . '[' . $args['name'] . ']" value="1" %s />',
+						checked( ! empty( $this->options[ $args['name'] ] ), true, false )
+
+					);
+
+					if ( isset( $args['note'] ) ) {
+
+						print(
+
+							'<p class="description">' . $args['note'] . '</p>'
+
+						);
+
+					}
+
+					break;
+
 				default :
 
 					printf(
