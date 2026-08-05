@@ -233,11 +233,9 @@
 					'type'    => 'number',
 					'setting' => 'site',
 				]
-
 			);
 			
 			add_settings_field(
-
 				'api_id',
 				'API ID',
 				[ $this, 'add_field' ],
@@ -284,7 +282,6 @@
 			);
 
 			add_settings_field(
-
 				'email',
 				'Email Address',
 				[ $this, 'add_field' ],
@@ -295,7 +292,19 @@
 					'type'    => 'email',
 					'setting' => 'site',
 				]
+			);
 
+			add_settings_field(
+				'hasRooms',
+				'Has Rooms',
+				[ $this, 'add_field' ],
+				'propeller-manager',
+				'site_settings',
+				[
+					'name'    => 'hasRooms',
+					'type'    => 'checkbox',
+					'setting' => 'site',
+				]
 			);
 
 			add_settings_field(
