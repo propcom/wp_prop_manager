@@ -189,6 +189,16 @@
 
 			);
 
+			register_setting(
+        'propeller-manager', 
+        'hasRooms',           
+        [
+            'type'              => 'boolean',
+            'sanitize_callback' => 'rest_sanitize_boolean',
+            'default'           => false,
+        ]
+    	);
+
 		}
 
 		function define_settings() {
@@ -295,17 +305,17 @@
 			);
 
 			add_settings_field(
-				'hasRooms',
-				'Has Rooms',
-				[ $this, 'add_field' ],
-				'propeller-manager',
-				'site_settings',
-				[
-					'name'    => 'hasRooms',
-					'type'    => 'checkbox',
-					'setting' => 'site',
-				]
-			);
+        'hasRooms',
+        'Has Rooms',
+        [ $this, 'add_field' ],
+        'propeller-manager',
+        'site_settings',
+        [
+            'name'    => 'hasRooms',
+            'type'    => 'checkbox',
+            'setting' => 'site',
+        ]
+    	);
 
 			add_settings_field(
 
