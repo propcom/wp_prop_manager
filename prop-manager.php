@@ -354,6 +354,19 @@
 			);
 
 			add_settings_field(
+				'profitroomRedirect',
+				'Profitroom Redirect',
+				[ $this, 'add_field' ],
+				'propeller-manager',
+				'site_settings',
+				[
+					'name'    => 'profitroomRedirect',
+					'type'    => 'checkbox',
+					'setting' => 'site',
+				]
+			);
+
+			add_settings_field(
 
 				'webmaster_html_tag',
 				'Webmaster HTML Tag',
@@ -416,7 +429,6 @@
 					'type'    => 'text',
 					'setting' => 'site',
 				]
-
 			);
 
 			/**
